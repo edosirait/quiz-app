@@ -17,7 +17,7 @@ const initialState: QuizState = {
       answerId: 2,
     },
     {
-      question: 'The Sasando musical instrument comes from the area of….?',
+      question: 'The Sasando musical instrument comes from the area of?',
       options: [
         {labelText: 'A. Medan', active: false},
         {labelText: 'B. Nusa Tenggara Timur,', active: false},
@@ -39,7 +39,7 @@ const initialState: QuizState = {
     {
       question: 'Animals that reproduce by dividing?',
       options: [
-        {labelText: 'A. bintang laut', active: false},
+        {labelText: 'A. starfish', active: false},
         {labelText: 'B. planarian worms', active: false},
         {labelText: 'C. protozoa', active: false},
         {labelText: 'D. hydra', active: false},
@@ -47,7 +47,7 @@ const initialState: QuizState = {
       answerId: 2
     },
     {
-      question: 'The lizard\'s ability to suddenly drop its tail to trick its enemies is called...?',
+      question: 'The lizard\'s ability to suddenly drop its tail to trick its enemies is called?',
       options: [
         {labelText: 'A. mimicry', active: false},
         {labelText: 'B. echolocation', active: false},

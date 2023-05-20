@@ -56,8 +56,23 @@ export class QuizPageComponent implements OnInit {
   }
 
   openDialog() {
-    this.dialog.open(SimpleModalsComponent, {
+    const dialogRef = this.dialog.open(SimpleModalsComponent, {
       data: { score: this.score }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+
+        /** Info: remove read only */
+        let modified : Question[] = this.quizData.map(x => ({...x}));
+        modified.forEach(x=> {x.options = x.options?.map(y => ({...y}))});
+
+        modified.forEach(value => {
+          value.options.map(x => x.active = false)
+        })
+
+        this.quizData = modified;
+      }
     });
   }
 }

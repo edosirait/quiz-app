@@ -12,7 +12,7 @@ export class SimpleModalsComponent {
               private dialogRef: MatDialogRef<SimpleModalsComponent>) { }
 
   onClose() {
-    this.dialogRef.close();
+    this.dialogRef.close(true);
   }
 
 }
